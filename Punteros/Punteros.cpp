@@ -28,6 +28,11 @@ int main()
 
     cout << pointer_number << endl; // LA DIRECCIÓN DE MEMORIA VA A SEGUIR EXISTIENDO AL DESPLEGAR EN LA CONSOLA.
 
-    cout << *pointer_number; // IMPRIME EL VALOR NUMÉRICO (4).
+    cout << *pointer_number << endl; // IMPRIME EL VALOR NUMÉRICO (HACER SALTO DE LÍNEA E IMPRIME EL VALOR NÚMERO 4).
+
+    cout << &number; // QUÉ PASARÍA SI IMPRIMIÉRAMOS ESTO?????...
+
+    pointer_number = &number;
+    *pointer_number = number;
 }
 
