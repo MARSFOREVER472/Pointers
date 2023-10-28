@@ -14,6 +14,11 @@ int main()
 
     // VAMOS A DESPLEGAR UN VALOR NUMÉRICO MEDIANTE PUNTEROS:
 
+    // LO PROBAREMOS AHORA CON UNA VARIABLE EN DONDE UN PUNTERO APUNTA AL VECTOR FINAL DE TODA LA LISTA DE ARREGLOS...
+
+    int* vector_num = new int[3];
+    cout << vector_num[0];
+
     // int number = 3; // VARIABLE NUMÉRICA.
     // int* pointer_number; // VARIABLE DEL PUNTERO DE UN VALOR NUMÉRICO.
     // pointer_number = &number; // APUNTA A UN NÚMERO DESPLEGADO POR CONSOLA MEDIANTE UN TROZO DE DIRECCIÓN DE MEMORIA.
@@ -41,17 +46,17 @@ int main()
     // LUEGO DE ELLO, DESPLIEGUE EL CUADRADO DE UN NÚMERO UTILIZANDO EL PUNTERO (NO ES VÁLIDA OCUPAR LA VARIABLE, SINO QUE DEBE SER MEDIANTE 
     // OPERACIONES DEL PUNTERO) Y LA DIRECCIÓN DE MEMORIA DE UNA VARIABLE.
 
-    int num;
-    cout << "ENTER A NUMBER: ";
-    cin >> num;
+    // int num;
+    // cout << "ENTER A NUMBER: ";
+    // cin >> num;
 
-    int* num_pointer = &num; // VARIABLE QUE APUNTA AL NÚMERO INGRESADO.
+    // int* num_pointer = &num; // VARIABLE QUE APUNTA AL NÚMERO INGRESADO.
 
-    int num_cuadrado = num * num; // SUPONGA EL VALOR 3 QUE DEBE SER IGUAL A: 3 * 3 = 9.
+    // int num_cuadrado = num * num; // SUPONGA EL VALOR 3 QUE DEBE SER IGUAL A: 3 * 3 = 9.
 
-    int cuadrado = *num_pointer * *num_pointer; // EL CUADRADO DE UN NÚMERO SE SACA AHORA MEDIANTE PUNTEROS.
+    // int cuadrado = *num_pointer * *num_pointer; // EL CUADRADO DE UN NÚMERO SE SACA AHORA MEDIANTE PUNTEROS.
 
-    cout << cuadrado; // IMPRIME EL CUADRADO DE UN NÚMERO INGRESADO.
+    // cout << cuadrado; // IMPRIME EL CUADRADO DE UN NÚMERO INGRESADO.
 
     // 2.- DESARROLLE UN PROGRAMA QUE RECIBA UNA PALABRA POR CONSOLA.
     //     LUEGO, CREE UN VECTOR DE ESTE LARGO Y A CADA POSICIÓN DEL VECTOR LE ASIGNE UNA LETRA, PERO EN ORDEN INVERTIDO.
@@ -59,22 +64,33 @@ int main()
 
     // DENTRO DE ESTE MAIN, HAREMOS EL ÚLTIMO EJERCICIO DE ESTA MANERA:
 
-    int* vector_num = new int[3]; // NUEVA VARIABLE DE ARREGLOS DE NÚMEROS ENTEROS MEDIANTE PUNTERO QUE REDIRECCIONA A ESTA VARIABLE, ES DECIR: [XXX, XXX², XXX³, ...].
+    // int* vector_num = new int[3]; // NUEVA VARIABLE DE ARREGLOS DE NÚMEROS ENTEROS MEDIANTE PUNTERO QUE REDIRECCIONA A ESTA VARIABLE, ES DECIR: [XXX, XXX², XXX³, ...].
 
-    vector_num = &vector_num[2]; // PUNTERO DE LA VARIABLE YA DECLARADA.
+    // vector_num = &vector_num[2]; // PUNTERO DE LA VARIABLE YA DECLARADA.
 
-    *(vector_num + 2); // SUMA A 2 POR EL PUNTERO.
+    // *(vector_num + 2); // EN ORDEN INVERSO.
 
-    vector_num += 2; // LO MISMO QUE EL DE LA ANTERIOR, PERO DE OTRA FORMA.
+    // SUPONGA QUE LOS VALORES RECORREN MEDIANTE VECTOR DE ARREGLOS:
 
-    vector_num[0]; // EL ARREGLO DE ESTE PUNTERO SE INICIALIZA EN 0.
+    // [0] = 2;
+    // [1] = 3;
+    // [2] = 4;
+
+    // Y SE MANTIENE AHÍ:
+
+    // [1] = 4;
+    // [1] = 4;
+
+    // vector_num += 2; // LO MISMO QUE EL DE LA ANTERIOR, PERO DE OTRA FORMA.
+
+    // vector_num[0]; // EL ARREGLO DE ESTE PUNTERO SE INICIALIZA EN 0.
 
     // VERSIONES DIFERENTE A LA HORA DE JUGAR CON EL PUNTERO DE UNA LISTA DE ARREGLOS DE UN VECTOR.
 
-    vector_num[1] = *(vector_num + 2); // VERSIÓN 1.
-    vector_num[1] = vector_num[2]; // VERSIÓN 2.
+    // vector_num[1] = *(vector_num + 2); // VERSIÓN 1.
+    // vector_num[1] = vector_num[2]; // VERSIÓN 2.
 
-    int* puntero_a = &vector_num[0]; // APUNTA A LA PRIMERA LETRA MEDIANTE UNA VARIABLE YA DECLARADA EN ESTE EJERCICIO.
+    // int* puntero_a = &vector_num[0]; // APUNTA A LA PRIMERA LETRA MEDIANTE UNA VARIABLE YA DECLARADA EN ESTE EJERCICIO.
 
 }
 
