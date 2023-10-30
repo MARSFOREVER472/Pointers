@@ -16,8 +16,8 @@ int main()
 
     // LO PROBAREMOS AHORA CON UNA VARIABLE EN DONDE UN PUNTERO APUNTA AL VECTOR FINAL DE TODA LA LISTA DE ARREGLOS...
 
-    int* vector_num = new int[3];
-    cout << vector_num[0];
+    // int* vector_num = new int[3];
+    // cout << vector_num[0];
 
     // int number = 3; // VARIABLE NUMÉRICA.
     // int* pointer_number; // VARIABLE DEL PUNTERO DE UN VALOR NUMÉRICO.
@@ -91,6 +91,31 @@ int main()
     // vector_num[1] = vector_num[2]; // VERSIÓN 2.
 
     // int* puntero_a = &vector_num[0]; // APUNTA A LA PRIMERA LETRA MEDIANTE UNA VARIABLE YA DECLARADA EN ESTE EJERCICIO.
+
+    // AHORA PROCEDEREMOS A REALIZAR EL EJERCICIO DE MANERA FIJA.
+
+    // PRIMERO SE DECLARA UNA VARIABLE QUE APUNTA A UN ENTERO MEDIANTE UNA LISTA DE ARREGLOS.
+
+    int* vec_num = new int[3]; // UN VECTOR TIENE QUE CONTENER 3 ELEMENTOS EN UNA LISTA DE ARREGLOS QUE RECORRE EN ELLA.
+    vec_num[0] = 0; // EL VECTOR QUE ESTÁ EN LA POSICIÓN 0 IMPRIME EL MISMO VALOR QUE ESTÁ EN LA LISTA.
+    vec_num[1] = 1; // LO MISMO MIENTRAS RECORRE EL VECTOR EN ESTA LISTA.
+    vec_num[2] = 2; // Y ASÍ SUCESIVAMENTE, SIN EMBARGO SE IMPRIMIRÁ EL VALOR ANTERIOR YA QUE CONSTA DE UN ELEMENTO MÁS EN ESTA LISTA QUE RECORRE.
+
+    // PARA RECORRER CADA ELEMENTO EN UNA LISTA DE ARREGLOS, USAREMOS EL CICLO WHILE:
+
+    while (true)
+    {
+        if (*vec_num < 0)
+        {
+            break;
+        }
+
+        cout << *vec_num << endl;
+        vec_num += 1;
+    }
+
+    vec_num -= 2;
+    cout << vec_num[0]; // COMIENZA DESDE LA POSICIÓN 0 EL RECORRIDO DEL VECTOR.
 
 }
 
