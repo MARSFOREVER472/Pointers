@@ -97,25 +97,37 @@ int main()
     // PRIMERO SE DECLARA UNA VARIABLE QUE APUNTA A UN ENTERO MEDIANTE UNA LISTA DE ARREGLOS.
 
     int* vec_num = new int[3]; // UN VECTOR TIENE QUE CONTENER 3 ELEMENTOS EN UNA LISTA DE ARREGLOS QUE RECORRE EN ELLA.
-    vec_num[0] = 0; // EL VECTOR QUE ESTÁ EN LA POSICIÓN 0 IMPRIME EL MISMO VALOR QUE ESTÁ EN LA LISTA.
-    vec_num[1] = 1; // LO MISMO MIENTRAS RECORRE EL VECTOR EN ESTA LISTA.
-    vec_num[2] = 2; // Y ASÍ SUCESIVAMENTE, SIN EMBARGO SE IMPRIMIRÁ EL VALOR ANTERIOR YA QUE CONSTA DE UN ELEMENTO MÁS EN ESTA LISTA QUE RECORRE.
+    // vec_num[0] = 0; // EL VECTOR QUE ESTÁ EN LA POSICIÓN 0 IMPRIME EL MISMO VALOR QUE ESTÁ EN LA LISTA.
+    // vec_num[1] = 1; // LO MISMO MIENTRAS RECORRE EL VECTOR EN ESTA LISTA.
+    // vec_num[2] = 2; // Y ASÍ SUCESIVAMENTE, SIN EMBARGO SE IMPRIMIRÁ EL VALOR ANTERIOR YA QUE CONSTA DE UN ELEMENTO MÁS EN ESTA LISTA QUE RECORRE.
 
     // PARA RECORRER CADA ELEMENTO EN UNA LISTA DE ARREGLOS, USAREMOS EL CICLO WHILE:
 
-    while (true)
-    {
-        if (*vec_num < 0)
-        {
-            break;
-        }
+    // while (true)
+    // {
+    //     if (*vec_num < 0)
+    //     {
+    //         break;
+    //     }
 
-        cout << *vec_num << endl;
-        vec_num += 1;
+    //     cout << *vec_num << endl;
+    //     vec_num += 1;
+    // }
+
+    // vec_num -= 2;
+    // cout << vec_num[0]; // COMIENZA DESDE LA POSICIÓN 0 EL RECORRIDO DEL VECTOR.
+
+    // PARA EFECTOS ESPECIALES, SE PUEDE UTILIZAR EL CICLO FOR:
+
+    for (int i = 0; i < 3; ++i)
+    {
+        *(vec_num + i) = i; // MEDIANTE CADA LÍNEA DE CÓDIGO APUNTA A CADA DIRECCIÓN DE MEMORIA QUE GUARDA EN UNA VARIABLE.
     }
 
-    vec_num -= 2;
-    cout << vec_num[0]; // COMIENZA DESDE LA POSICIÓN 0 EL RECORRIDO DEL VECTOR.
-
+    for (int i = 0; i < 3; ++i)
+    {
+        cout << *(vec_num + i) << endl; // SE RESUELVE ESTO MEDIANTE EL PUNTERO INDICADO.
+        cout << vec_num + i << endl;
+    }
 }
 
