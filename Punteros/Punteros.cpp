@@ -96,7 +96,7 @@ int main()
 
     // PRIMERO SE DECLARA UNA VARIABLE QUE APUNTA A UN ENTERO MEDIANTE UNA LISTA DE ARREGLOS.
 
-    int* vec_num = new int[3]; // UN VECTOR TIENE QUE CONTENER 3 ELEMENTOS EN UNA LISTA DE ARREGLOS QUE RECORRE EN ELLA.
+    // int* vec_num = new int[3]; // UN VECTOR TIENE QUE CONTENER 3 ELEMENTOS EN UNA LISTA DE ARREGLOS QUE RECORRE EN ELLA.
     // vec_num[0] = 0; // EL VECTOR QUE ESTÁ EN LA POSICIÓN 0 IMPRIME EL MISMO VALOR QUE ESTÁ EN LA LISTA.
     // vec_num[1] = 1; // LO MISMO MIENTRAS RECORRE EL VECTOR EN ESTA LISTA.
     // vec_num[2] = 2; // Y ASÍ SUCESIVAMENTE, SIN EMBARGO SE IMPRIMIRÁ EL VALOR ANTERIOR YA QUE CONSTA DE UN ELEMENTO MÁS EN ESTA LISTA QUE RECORRE.
@@ -119,15 +119,21 @@ int main()
 
     // PARA EFECTOS ESPECIALES, SE PUEDE UTILIZAR EL CICLO FOR:
 
-    for (int i = 0; i < 3; ++i)
-    {
-        *(vec_num + i) = i; // MEDIANTE CADA LÍNEA DE CÓDIGO APUNTA A CADA DIRECCIÓN DE MEMORIA QUE GUARDA EN UNA VARIABLE.
-    }
+    // for (int i = 0; i < 3; ++i)
+    // {
+        // *(vec_num + i) = i; // MEDIANTE CADA LÍNEA DE CÓDIGO APUNTA A CADA DIRECCIÓN DE MEMORIA QUE GUARDA EN UNA VARIABLE.
+    // }
 
-    for (int i = 0; i < 3; ++i)
-    {
-        cout << *(vec_num + i) << endl; // SE RESUELVE ESTO MEDIANTE EL PUNTERO INDICADO.
-        cout << vec_num + i << endl;
-    }
+    // for (int i = 0; i < 3; ++i)
+    // {
+        // cout << *(vec_num + i) << endl; // SE RESUELVE ESTO MEDIANTE EL PUNTERO INDICADO.
+        // cout << vec_num + i << endl;
+    // }
+
+    // LO QUE VAMOS A INTRODUCIR EN ESTO HOY DÍA:
+
+    // - DESTRUCTORES.
+    // - COMPLEJIDAD ALGORÍTMICA.
+    // - LECTURA Y ESCRITURA DE ARCHIVOS.
 }
 
