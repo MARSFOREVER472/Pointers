@@ -7,13 +7,13 @@ Los punteros en C++ (o apuntadores) son quizá uno de los temas que más confusi
 Ejemplo:
 
 ```
-int variable; //Creamos un entero
+int variable; // Creamos un entero
 
-int * apuntador = &variable;//Creamos una apuntador a la posición en memoria de "variable"
+int * apuntador = &variable;// Creamos una apuntador a la posición en memoria de "variable"
 
-*apuntador = 20; //Le asignamos un valor a esa posición de memoria.
+*apuntador = 20; // Le asignamos un valor a esa posición de memoria.
 
-delete [] apuntador; //Después de operar con punteros es necesario liberar la memoria.
+delete [] apuntador; // Después de operar con punteros es necesario liberar la memoria.
 
 puntero = NULL;
 ```
