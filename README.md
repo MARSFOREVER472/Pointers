@@ -9,7 +9,7 @@ Ejemplo:
 ```
 int variable; // Creamos un entero
 
-int * apuntador = &variable;// Creamos una apuntador a la posición en memoria de "variable"
+int * apuntador = &variable; // Creamos una apuntador a la posición en memoria de "variable"
 
 *apuntador = 20; // Le asignamos un valor a esa posición de memoria.
 
