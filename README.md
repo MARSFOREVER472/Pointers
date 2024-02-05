@@ -4,7 +4,7 @@
 
 _Los punteros en C++ (o apuntadores) son quizá uno de los temas que más confusión causan al momento de aprender a programar en C++, sin embargo verás que no es para tanto y que todo depende de dos elementos: el signo & (ampersand) y el * (asterisco) que los explicaré en breve. Durante este artículo verás entonces que no es para nada difícil hacer y usar punteros y que además son de gran ayuda al momento de necesitar valores y estructuras dinámicas, por ejemplo, para crear un array dinámico, con dinámico me refiero a que su tamaño puede ser establecido en tiempo de ejecución y lo mismo se puede hacer con las matrices (que en realidad son un array multidimensional)._
 
-Ejemplo:
+**Ejemplo:**
 
 ```
 int variable; // Creamos un entero.
