@@ -24,7 +24,7 @@ puntero = NULL;
 
 - _Siempre que queremos usar el apuntador debemos anteponer el asterisco (*) para indicar que usaremos el valor en la posición de memoria apuntada._
 
-- De no usar el asterisco el comportamiento sería impredecible. Estaremos haciendo uso de la dirección de memoria más no del valor almacenado en ésta.
+- _De no usar el asterisco el comportamiento sería impredecible. Estaremos haciendo uso de la dirección de memoria más no del valor almacenado en ésta._
 
 - Después de usar un puntero, especialmente si trabajamos con arreglos o matrices, es MUY recomendable liberar la memoria utilizada con la función delete (tal como en el ejemplo)
 
