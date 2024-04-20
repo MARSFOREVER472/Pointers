@@ -20,7 +20,7 @@ puntero = NULL;
 
 ## Detalles al crear y usar punteros en C++:
 
-- _El tipo de dato del apuntador debe coincidir con el de la variable cuya posición en memoria apuntan. En el ejemplo vemos que tanto variable como apuntador son enteros._
+- **_El tipo de dato del apuntador debe coincidir con el de la variable cuya posición en memoria apuntan. En el ejemplo vemos que tanto variable como apuntador son enteros._**
 
 - _Siempre que queremos usar el apuntador debemos anteponer el asterisco (*) para indicar que usaremos el valor en la posición de memoria apuntada._
 
