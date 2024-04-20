@@ -29,4 +29,4 @@ puntero = NULL;
 
 - **_Después de usar un puntero, especialmente si trabajamos con arreglos o matrices, es MUY recomendable liberar la memoria utilizada con la función delete (**tal como se ha visto en el ejemplo anterior**)._**
 
-- _Un puntero puede ser de cualquier tipo de dato, inclusive los podemos usar con tipos complejos._
+- **_Un puntero puede ser de cualquier tipo de dato, inclusive los podemos usar con tipos complejos._**
